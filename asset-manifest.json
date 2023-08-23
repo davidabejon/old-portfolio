@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.ca932867.css",
+    "main.js": "/portfolio/static/js/main.1ec9ff08.js",
+    "static/js/787.aeca62f9.chunk.js": "/portfolio/static/js/787.aeca62f9.chunk.js",
+    "static/media/david.jpg": "/portfolio/static/media/david.1fcd09bd5ff5d1e45f2e.jpg",
+    "static/media/david-abejon-high-resolution-logo-white-on-transparent-background.png": "/portfolio/static/media/david-abejon-high-resolution-logo-white-on-transparent-background.d1f20fc10915c9b2d8ac.png",
+    "static/media/stacked-steps-haikei.svg": "/portfolio/static/media/stacked-steps-haikei.90c08882f3c21a1ba3de.svg",
+    "index.html": "/portfolio/index.html",
+    "static/media/wave-haikei.svg": "/portfolio/static/media/wave-haikei.c8e3daf38dd2fcacc523.svg",
+    "main.ca932867.css.map": "/portfolio/static/css/main.ca932867.css.map",
+    "main.1ec9ff08.js.map": "/portfolio/static/js/main.1ec9ff08.js.map",
+    "787.aeca62f9.chunk.js.map": "/portfolio/static/js/787.aeca62f9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ca932867.css",
+    "static/js/main.1ec9ff08.js"
+  ]
+}
