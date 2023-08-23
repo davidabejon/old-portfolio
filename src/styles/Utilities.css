@@ -1,0 +1,49 @@
+/* Utilities */
+.no-margin {
+    margin: 0;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.gap3 {
+    gap: 3rem;
+}
+
+.wrapper {
+    margin: 0 auto;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.bg-transition, .bg-transition-4 {
+    height: 30rem;
+    background-image: url("../svg/stacked-steps-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bg-transition-2, .bg-transition-3 {
+    height: 15rem;
+    background-image: url("../svg/wave-haikei.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+@media (min-width: 2140px) {
+    .bg-transition {
+        height: 60rem;
+    }
+    .bg-transition-2 {
+        height: 30rem;
+    }
+}
+.bg-transition-3, .bg-transition-4 {
+    transform: rotate(180deg);
+}

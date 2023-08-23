@@ -1,24 +1,51 @@
-import logo from './logo.svg';
+import { useEffect } from 'react';
 import './App.css';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import MainContent from './components/MainContent';
+import Nav from './components/Nav';
+import './styles/Utilities.css'
 
 function App() {
+
+  useEffect(() => {
+
+    /**
+     * Intersection Observer Setup
+     */
+    const cards = document.querySelectorAll(".tarjeta")
+    const observerProducts = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("tarjeta--show")
+        }
+      })
+      console.log(entries)
+    }, {
+      threshold: .3
+    })
+
+    cards.forEach(card => {
+      observerProducts.observe(card)
+    })
+
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Nav />
+      <Header />
+
+      <div class="bg-transition"></div>
+      <div class="bg-transition-2"></div>
+
+      <MainContent />
+
+      <div class="bg-transition-3"></div>
+      <div class="bg-transition-4"></div>
+
+      <Footer />
+    </>
   );
 }
 

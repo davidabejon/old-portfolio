@@ -1,0 +1,177 @@
+/* Front letters */
+.front {
+    margin: 0 auto;
+    padding-top: 5rem;
+    max-width: 60rem;
+    height: 40rem;
+    align-items: center;
+    font-family: var(--rubik);
+}
+
+@media (max-width: 767px) {
+    .heading {
+        height: 30rem;
+    }
+    .front {
+        width: 70%;
+        height: 20rem;
+    }
+
+}
+@media (max-width: 480px) {
+    .heading {
+        height: 30rem;
+    }
+    .front {
+        width: 80%;
+        height: 25rem;
+    }
+}
+@media (max-width: 380px) {
+    .heading {
+        height: 20rem;
+    }
+    .front {
+        width: 80%;
+        height: 15rem;
+    }
+    img {
+        width: 70%;
+    }
+}
+
+.line {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.word {
+    font-size: 7rem;
+    text-transform: uppercase;
+    cursor: default;
+    color: white;
+    transition: all .5s;
+    margin: 0;
+}
+
+.link {
+    cursor: pointer;
+    margin: 0;
+    font-size: 7rem;
+    text-transform: uppercase;
+    color: white;
+}
+@media (max-width: 1140px) {
+    .word, .link {
+        font-size: 6rem;
+    }
+}
+@media (max-width: 767px) {
+    .word, .link {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 480px) {
+    .word, .link {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width: 380px) {
+    .word, .link {
+        font-size: 2rem;
+    }
+}
+
+.front:has(.word:hover) .word:not(.word:hover) {
+    opacity: 0.2;
+}
+
+#linkedin:hover > span {
+    background: linear-gradient(to right, blue, cyan, blue);
+    background-size: 800%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rotate-bg 150 linear infinite;
+}
+#mail:hover > span {
+    background: linear-gradient(to right, #FF3232, #FFDCDC, #FF3232);
+    background-size: 800%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: rotate-bg 150s linear infinite;
+}
+
+span {
+    display: inline-block;
+    transition: .5s;
+}
+
+.front #linkedin:hover span,
+.front #mail:hover span {
+    position: relative;
+    animation: letter-bounce .8s ease-in-out infinite alternate;
+}
+
+.front #linkedin:hover span:nth-child(1),
+.front #mail:hover span:nth-child(1) { animation-delay: 75ms;}
+.front #linkedin:hover span:nth-child(2),
+.front #mail:hover span:nth-child(2) {animation-delay: 125ms;}
+.front #linkedin:hover span:nth-child(3),
+.front #mail:hover span:nth-child(3) {animation-delay: 200ms;}
+.front #linkedin:hover span:nth-child(4),
+.front #mail:hover span:nth-child(4) {animation-delay: 275ms;}
+.front #linkedin:hover span:nth-child(5),
+.front #mail:hover span:nth-child(5) {animation-delay: 350ms;}
+.front #linkedin:hover span:nth-child(6),
+.front #mail:hover span:nth-child(6) {animation-delay: 425ms;}
+.front #linkedin:hover span:nth-child(7),
+.front #mail:hover span:nth-child(7) {animation-delay: 500ms;}
+.front #linkedin:hover span:nth-child(8),
+.front #mail:hover span:nth-child(8) {animation-delay: 575ms;}
+.front #linkedin:hover span:nth-child(9),
+.front #mail:hover span:nth-child(9) {animation-delay: 650ms;}
+.front #linkedin:hover span:nth-child(10),
+.front #mail:hover span:nth-child(10) {animation-delay: 725ms;}
+
+
+.front .word:hover span:nth-child(1) {transform: rotate(-30deg) translate(-10%, -20%);}
+.front .word:hover span:nth-child(2) {transform: rotate(10deg) translateY(-20%);}
+.front .word:hover span:nth-child(3) {transform: rotate(-10deg) translate(30%, -40%);}
+.front .word:hover span:nth-child(4) {transform: rotate(10deg) translateY(-20%);}
+.front .word:hover span:nth-child(5) {transform: rotate(10deg) translate(20%, -20%);}
+.front .word:hover span:nth-child(6) {transform: rotate(-20deg) translate(40%, -20%);}
+.front .word:hover span:nth-child(7) {transform: rotate(10deg) translateY(30%);}
+.front .word:hover span:nth-child(8) {transform: rotate(-35deg) translate(0%, -10%);}
+.front .word:hover span:nth-child(9) {transform: rotate(-50deg) translate(40%, -55%);}
+.front .word:hover span:nth-child(10) {transform: rotate(-20deg) translate(-80%, 20%);}
+
+/* Animation */
+@keyframes rotate-bg {
+    0% {
+        background-position: 0%;
+    }
+    100% {
+        background-position: 800%;
+    }
+}
+
+@keyframes letter-bounce {
+    0% {
+        top: 0px;
+    }
+    100% {
+        top: -5px;
+    }
+}
+
+@keyframes moving-text-bg {
+    0% {
+        background-position: 0 center;
+    }
+    100% {
+        background-position: -200% center;
+    }
+}

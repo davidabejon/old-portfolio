@@ -1,0 +1,53 @@
+/* Footer */
+.footer {
+    background-color: black;
+    color: white;
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-content {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20rem;
+}
+@media (max-width: 780px) {
+    .footer-content {
+        gap: 10rem;
+    }
+}
+@media (max-width: 480px) {
+    .footer-content {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+/* .footer-enlace en sección nav */
+.footer-enlace {
+    position: relative;
+    margin-left: 30px;
+}
+
+.footer-enlace > svg {
+    position: absolute;
+    left: -3rem;
+    stroke: var(--gris);
+    transition: all .4s;
+}
+.footer-enlace:hover > svg {
+    transition: all .4s;
+    stroke: white;
+}
+
+.footer-text {
+    color: var(--gris);
+    font-size: 1.5rem;
+    margin: 3rem 0;
+}
